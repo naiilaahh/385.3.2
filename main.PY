@@ -18,14 +18,14 @@ with open(file_path, encoding='utf8') as f:
 
     # Example 3: Access index numbers and headers
     # for each row, get row number and line data
-    # for line_no, line in enumerate(csv_reader, 1):
+    for line_no, line in enumerate(csv_reader, 1):
     #     # If line 1, print separately as headers
-    #     if line_no == 1:
-    #         print("Header:")
-    #         print(line)
-    #         print("Data:")
-    #     else:
-    #         print(line)
+        if line_no == 1:
+            print("Header:")
+            print(line)
+            print("Data:")
+        else:
+            print(line)
 
 #  Opening csv as a dictioanry
 # with open(file_path, encoding='utf8') as f:
